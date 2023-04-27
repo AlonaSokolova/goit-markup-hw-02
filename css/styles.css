@@ -58,8 +58,8 @@
         text-decoration: none;
         
         }
-        .menu-item:hover,
-        .menu-item:focus {
+        .menu-item link:hover,
+        .menu-item link:focus {
             color: var(--accent-color);
         }
         .menu-item {
