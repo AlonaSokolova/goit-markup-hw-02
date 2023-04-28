@@ -8,17 +8,21 @@
          --accent-color: #404BBF;
         }
 
-        ul {
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-        }
         body {
-            font-family: var(--primary-font);
+            font-family: 'Roboto', sans-serif;
             color: #434455;
             background-color: #FFFFFF;
-          
+        }
+        
+        .list {
+            list-style: none;
+        }
+        
+        .link {
+            text-decoration: none;
+        }
+        .page-header {
+             background-color: #FFFFFF;
         }
         .modal-btn {
             font-family: var(--primary-font);
@@ -26,10 +30,12 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
-            letter-spacing: 0.02em;
             cursor: pointer;
             text-transform: uppercase;
             align-items: center;
+        }
+        .logo link {
+            line-height: 1.17;
         }
         .logo {
             font-family: var(--secondary-font);
@@ -37,14 +43,12 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
-        display: flex;
         align-items: center;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
         text-decoration: none;
         }
-        .span-logo {
+        .studio-logo {
             font-family: var(--secondary-font);
         font-style: normal;
         font-weight: 800;
@@ -52,16 +56,12 @@
         line-height: 1.17;
         display: flex;
         align-items: center;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #2E2F42;
         text-decoration: none;
         
         }
-        .menu-item link:hover,
-        .menu-item link:focus {
-            color: var(--accent-color);
-        }
+        
         .menu-item {
         font-family: var(--primary-font);   
         font-style: normal;
@@ -73,16 +73,16 @@
         text-transform: uppercase;
         cursor: pointer;
         text-decoration: none;
-
-        
         }
+        .menu-item:hover,
+        .menu-item:focus {
+            color: var(--accent-color);
+        }
+
         .adress {
             font-style: normal;
         }
-        .adress-contact:hover,
-        .adress-contact:focus {
-            color: var(--accent-color);
-        }
+        
         .adress-contact {
             font-family: var(--primary-font);
         font-style: normal;
@@ -90,9 +90,13 @@
         font-size: 16px;
         line-height: 1.5;
         color: #434455;
-        text-decoration: none;
-       /* color: #404bbf;*/
+        
         }
+        .adress-contact:hover,
+        .adress-contact:focus {
+            color: var(--accent-color);
+        }
+        
         .feauter-one {
             background-color: #2E2F42;
         }
@@ -104,8 +108,7 @@
         line-height: 1.07;
         text-align: center;
         color: #FFFFFF;
-        background: #2E2F42;
-        background-color: #404BBF
+        
         }
         .button {
             font-family: var(--primary-font);
@@ -117,9 +120,13 @@
         align-items: center;
         color: #FFFFFF;
         background: #4D5AE5;
-        background-color: #404BBF
-        
+        cursor: pointer;
         }
+        .button:hover,
+        .button:focus {
+            background-color: var(--accent-color);
+        }
+       
         .section {
             font-family: var(--primary-font);
         font-style: normal;
@@ -127,9 +134,7 @@
         font-size: 20px;
         line-height: 1.2;
         color: #2E2F42;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        
         }
         .section-description {
             font-family: var(--primary-font);
@@ -156,25 +161,48 @@
         height: 300px;
     
         }
-        .secondary-section-img {
-            background: url(man-with-laptop-presenting-something.jpg);
-        mix-blend-mode: normal;
+        
+        .feauter-four {
+            background-color: #F4F4FD;
+        }
+        .section-header-title {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            text-transform: capitalize;
+            color: var(--primery-text-color-theme-light);
+        }
+        .section-header-item {
+            background-color: #FFFFFF;
+        }
+        .section-team {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            text-align: center;
+            color: var(--primery-text-color-theme-light);
+        }
+        .section-description-text {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+            color: var(--secondary-text-color-theme-light);
 
         }
 
-
-        .logo {
-            font-family: var(--secondary-font);
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.16px;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4D5AE5;
+        .footer {
+            background-color: #2E2F42;
         }
-        .span-logo-footer {
+
+        .studio-logo-footer {
             font-family: var(--secondary-font);
             font-style: normal;
             font-weight: 800;
@@ -187,19 +215,16 @@
         
         }
         .footer-text {
-            position: absolute;
+           
         font-family: var(--primary-font);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
-        color: #F4F4FD;
-        background: #2E2F42;
+        color: var(--primery-text-color-theme-dark);
         }
-        .footer {
-            position: absolute;
-            background: #2E2F42; 
-        }
+       /* portfolio*/
+       
         .button-click {
             font-family: var(--primary-font);
         font-style: normal;
